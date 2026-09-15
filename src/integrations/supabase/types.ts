@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      service_tickets: {
+        Row: {
+          checked_in_at: string
+          created_at: string
+          current_stage: number
+          device: string
+          estimated_done: string | null
+          id: string
+          serial: string | null
+          stage_times: Json
+          technician: string | null
+          technician_note: string | null
+          ticket_no: string
+          updated_at: string
+        }
+        Insert: {
+          checked_in_at?: string
+          created_at?: string
+          current_stage?: number
+          device: string
+          estimated_done?: string | null
+          id?: string
+          serial?: string | null
+          stage_times?: Json
+          technician?: string | null
+          technician_note?: string | null
+          ticket_no: string
+          updated_at?: string
+        }
+        Update: {
+          checked_in_at?: string
+          created_at?: string
+          current_stage?: number
+          device?: string
+          estimated_done?: string | null
+          id?: string
+          serial?: string | null
+          stage_times?: Json
+          technician?: string | null
+          technician_note?: string | null
+          ticket_no?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
