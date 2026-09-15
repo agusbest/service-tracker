@@ -77,16 +77,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "KonsolCare — Lacak Service PlayStation" },
+      {
+        name: "description",
+        content:
+          "Pantau status perbaikan konsol PlayStation-mu: tanggal masuk, progres teknisi, dan estimasi selesai. Cukup masukkan nomor tiket service.",
+      },
+      { name: "author", content: "KonsolCare Indonesia" },
+      { property: "og:title", content: "KonsolCare — Lacak Service PlayStation" },
+      {
+        property: "og:description",
+        content:
+          "Pantau status perbaikan konsol PlayStation-mu: tanggal masuk, progres teknisi, dan estimasi selesai.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
