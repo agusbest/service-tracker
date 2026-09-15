@@ -233,7 +233,7 @@ function TrackingPage() {
                     type="button"
                     onClick={() => {
                       setQuery(id);
-                      setTicket(TICKETS[id]);
+                      setTicket(TICKETS[id] ?? null);
                       setNotFound(false);
                     }}
                     className="font-medium text-primary hover:underline"
