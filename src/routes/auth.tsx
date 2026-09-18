@@ -119,11 +119,11 @@ function AuthPage() {
             : "Sudah punya akun? Masuk di sini"}
         </button>
 
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <Link to="/" className="text-xs text-muted-foreground hover:text-primary">
             ← Kembali ke halaman lacak
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

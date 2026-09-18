@@ -6,7 +6,7 @@ import ps5Workshop from "@/assets/ps5-workshop.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lacak Service PlayStation — KonsolCare" },
+      { title: "Service Tracker" },
       {
         name: "description",
         content:
@@ -419,7 +419,7 @@ function TrackingPage() {
                   Butuh bantuan mendesak? Hubungi teknisi kami melalui WhatsApp.
                 </p>
                 <a
-                  href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+                  href={`https://wa.me/6285319006656?text=${encodeURIComponent(
                     `Halo, saya mau tanya status service ${ticket.id}`,
                   )}`}
                   target="_blank"
@@ -438,7 +438,7 @@ function TrackingPage() {
       <footer className="border-t border-border py-12">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <p className="text-xs text-muted-foreground">
-            &copy; 2026 KonsolCare Indonesia. Seluruh hak cipta dilindungi.
+            &copy; 2026 ServiceTracker
           </p>
         </div>
       </footer>
